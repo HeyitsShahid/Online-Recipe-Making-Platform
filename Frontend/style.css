@@ -1,0 +1,143 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Light background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #343a40; /* Dark background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* About Section */
+#about h2 {
+  font-size: 2rem;
+  color: #343a40; /* Dark text */
+  border-bottom: 2px solid #007bff; /* Blue underline */
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Recipe Section */
+#recipes h2 {
+  font-size: 2rem;
+  color: #343a40;
+  border-bottom: 2px solid #28a745; /* Green underline */
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Card shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #007bff; /* Blue text for recipe titles */
+}
+
+/* Contact Section */
+#contact h2 {
+  font-size: 2rem;
+  color: #343a40;
+  border-bottom: 2px solid #ffc107; /* Yellow underline */
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#contact label {
+  font-weight: bold;
+  color: #343a40;
+}
+
+#contact button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  #about h2,
+  #recipes h2,
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
